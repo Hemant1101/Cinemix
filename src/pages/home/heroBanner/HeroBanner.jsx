@@ -26,14 +26,14 @@ const HeroBanner = () => {
   }
 
   return (
-    <div className="herBanner">
+    <div className="heroBanner">
       {!loading && <div className="backdrop-img">
         <Img src={background} />
       </div>}
       <div className="opacity-layer"></div>
       <ContentWrapper>
-        <div className="heroBannerConent">
-          <span className="title">Welcom.</span>
+        <div className="heroBannerContent">
+          <span className="title">Welcome.</span>
           <span className="subtitle">
             Millions of movies, TV show and more to discover.
             Explore now.
