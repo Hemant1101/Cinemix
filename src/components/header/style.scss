@@ -11,12 +11,12 @@
     transition:all ease 0.5s;
     &.top{
         z-index: 2;
-        background-color: rgba(0,0,0,0.25);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.55),rgba(0,0,0,0.40),rgba(0,0,0,0.15),transparent );
         backdrop-filter: blur(3.5px);
         -webkit-backdrop-filter: blur(3.5px);
     }
     &.show{
-        background-color: var(--black3);
+        background-color: var(--primary);
     }
     &.hide{
         transform:translateY(-60px);
@@ -56,7 +56,7 @@
                 font-size: 18px;
             }
             &:hover{
-                color: var(--pink);
+                color: var(--accent);
             }
         }
     }
@@ -75,13 +75,13 @@
     }
 
     &.mobileView{
-        background-color: var(--black3);
+        background-color: var(--primary);
         .menuItems{
             display:flex;
             position:absolute;
             top:60px;
             left:0;
-            background:var(--black3);
+            background:var(--primary);
             flex-direction:column;
             width:100%;
             padding: 20px 0;
